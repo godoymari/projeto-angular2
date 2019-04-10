@@ -1,0 +1,75 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <!-- logo -->
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <img src="assets/img/logo.png">
+    </a>
+  </div>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+        <div class="btn-group" dropdown>
+            <button dropdownToggle type="button" class="btn btn-light dropdown-toggle">
+              Condôminos <span class="caret"></span>
+            </button>
+            <ul *dropdownMenu class="dropdown-menu" role="menu">
+              <li role="menuitem" routerLinkActive="active"><a class="dropdown-item" href="#" routerLink="/cadastroCondominos">Cadastro</a></li>
+              <li role="menuitem" routerLinkActive="active"><a class="dropdown-item" href="#" routerLink="/listaCondominos">Lista</a></li>
+              
+              
+            </ul>
+          </div>
+          <div class="btn-group" dropdown>
+              <button dropdownToggle type="button" class="btn btn-light dropdown-toggle">
+                Funcionários <span class="caret"></span>
+              </button>
+              <ul *dropdownMenu class="dropdown-menu" role="menu">
+                <li role="menuitem" routerLinkActive="active"><a class="dropdown-item" href="#" routerLink="/cadastroFuncionarios">Cadastro</a></li>
+                <li role="menuitem" routerLinkActive="active"><a class="dropdown-item" href="#" routerLink="/listaFuncionarios">Lista</a></li>
+                
+                
+              </ul>
+            </div>
+            <div class="btn-group" dropdown>
+                <button dropdownToggle type="button" class="btn btn-light dropdown-toggle">
+                  Visitantes <span class="caret"></span>
+                </button>
+                <ul *dropdownMenu class="dropdown-menu" role="menu">
+                  <li role="menuitem" routerLinkActive="active"><a class="dropdown-item" href="#" routerLink="/cadastroVisitantes">Cadastro</a></li>
+                  <li role="menuitem" routerLinkActive="active"><a class="dropdown-item" href="#" routerLink="/listaVisitantes">Lista</a></li>
+                  
+                  
+                </ul>
+              </div>
+              <!----<div class="btn-group" dropdown>
+                  <button dropdownToggle type="button" class="btn btn-light dropdown-toggle">
+                    Almoxarifado <span class="caret"></span>
+                  </button>
+                  <ul *dropdownMenu class="dropdown-menu" role="menu">
+                    <li role="menuitem" routerLinkActive="active"><a class="dropdown-item" href="#" routerLink="/comprasAlmoxarifado">Lista de Compras</a></li>
+                    <li role="menuitem" routerLinkActive="active"><a class="dropdown-item" href="#" routerLink="/estoqueAlmoxarifado">Estoque</a></li>
+                    <li class="divider dropdown-divider"></li>
+                    <li role="menuitem"><a class="dropdown-item" href="#">Separated link</a>
+                    </li>
+                  </ul>
+                </div>-->
+          <li class="nav-item" routerLinkActive="active">
+              <a class="nav-link" routerLink="/formMensagem">Mensagem</a>
+          </li>        
+    </ul>
+  </div>
+  <ul class="lista-login">
+  <li class="nav-item" routerLinkActive="active">
+      <a class="nav-link" routerLink="/login">Login</a>
+  </li>
+</ul>
+</nav>  
+
+  
+  <div class="container">
+      <router-outlet></router-outlet>
+  </div>
+
